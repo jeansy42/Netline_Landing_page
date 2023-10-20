@@ -44,6 +44,7 @@ function Bottom() {
             <BsWhatsapp className="h-7 w-7 fill-green-500 hover:scale-105 transition-transform" />
           </a>
         </div>
+        
       </div>
     </div>
   );
