@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { AnimatePresence } from "framer-motion";
 import MotionSpan from "./MotionSpan";
 
 function TransitionalComponent() {
@@ -16,15 +17,23 @@ function TransitionalComponent() {
 
   return (
     <>
-      {countComponent == 1 && (
-        <MotionSpan text="Ideal para família" img="bg-family" />
-      )}
-      {countComponent == 2 && (
-        <MotionSpan text="Para todo mundo" img="bg-world" />
-      )}
-      {countComponent == 3 && (
-        <MotionSpan text="Muita velocidade" img="bg-velocity" />
-      )}
+      <AnimatePresence>
+        {countComponent == 1 && (
+          <MotionSpan text="Ideal para família" img="bg-family" />
+        )}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {countComponent == 2 && (
+          <MotionSpan text="Para todo mundo" img="bg-world" />
+        )}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {countComponent == 3 && (
+          <MotionSpan text="Muita velocidade" img="bg-velocity" />
+        )}
+      </AnimatePresence>
     </>
   );
 }
