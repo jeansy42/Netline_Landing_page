@@ -5,7 +5,7 @@ function MotionSpan({ text, img }: { text: string; img: string }) {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 2 }}
+      transition={{ duration: 4 }}
       exit={{ opacity: 0 }}
       className="absolute -top-4 left-6 inline-flex flex-col gap-2 items-start text-cusdarkBlue font-bold text-lg sm:left-24 md:left-[48%] md:-top-4 lg:-top-8  "
     >

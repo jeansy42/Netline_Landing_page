@@ -10,7 +10,7 @@ function TransitionalComponent() {
         if (prev === 3) return 1;
         else return prev + 1;
       });
-    }, 3500);
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
 

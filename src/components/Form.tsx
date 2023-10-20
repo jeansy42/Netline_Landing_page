@@ -8,7 +8,7 @@ import {
   replaceWhiteSpace,
 } from "../utils/auxiliar_functions";
 import InvalidInputMessage from "./InvalidInputMessage";
-import { registerLead } from "../utils/request";
+/* import { registerLead } from "../utils/request"; */
 import AnimatedButton from "./AnimatedButton";
 
 function Form() {
